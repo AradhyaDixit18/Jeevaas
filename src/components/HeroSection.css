@@ -1,0 +1,63 @@
+.hero-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Lightened background */
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for better visibility */
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 220px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .card-icon {
+    width: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ff5722; /* Highlight color */
+  }
+  
+  .card-description {
+    color: #555; /* Darker description color */
+  }
+  
+  .book-slot-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #ff5722; /* Highlight color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-slot-btn:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+  }
+  
