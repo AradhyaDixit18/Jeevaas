@@ -1,0 +1,15 @@
+{
+  "short_name": "Jeevaas Hospital",
+  "name": "Jeevaas Hospital — Multispeciality Hospital, Kanpur",
+  "icons": [
+    {
+      "src": "logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1d4ed8",
+  "background_color": "#ffffff"
+}
