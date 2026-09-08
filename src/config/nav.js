@@ -5,6 +5,7 @@ export const nav = [
   { label: "Departments", to: "/departments" },
   { label: "Doctors", to: "/doctors" },
   { label: "Facilities", to: "/facilities" },
+  { label: "Store", to: "/store" },
   { label: "Kids Zone", to: "/kids" },
   { label: "Patient Info", to: "/patient-resources" },
   { label: "Health Tips", to: "/health-wellness" },
@@ -19,8 +20,8 @@ export const primaryNav = [
   { label: "About", to: "/about" },
   { label: "Departments", to: "/departments" },
   { label: "Doctors", to: "/doctors" },
+  { label: "Store", to: "/store" },
   { label: "Kids Zone", to: "/kids" },
-  { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ];
 
@@ -29,6 +30,7 @@ export const footerQuickLinks = [
   { label: "Departments", to: "/departments" },
   { label: "Find a Doctor", to: "/doctors" },
   { label: "Facilities", to: "/facilities" },
+  { label: "Medical & Dental Store", to: "/store" },
   { label: "Kids Zone", to: "/kids" },
   { label: "Patient Info", to: "/patient-resources" },
   { label: "Health Tips", to: "/health-wellness" },

@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Icon from "./Icon";
 import { nav, primaryNav } from "../config/nav";
 import { site, links } from "../config/site";
+import { CartButton } from "./products/CartButton";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -103,6 +104,7 @@ export default function Navbar() {
             >
               <Icon name="ambulance" className="h-4 w-4" /> Emergency
             </a>
+            <CartButton />
             <Link to="/book" className="hidden btn-primary btn-md sm:inline-flex">
               <Icon name="calendar" className="h-4 w-4" /> Book
             </Link>

@@ -5,7 +5,9 @@ import Reveal from "../components/Reveal";
 import SectionHeading from "../components/SectionHeading";
 import ServiceCard from "../components/ServiceCard";
 import CTABand from "../components/CTABand";
+import ProductCard from "../components/products/ProductCard";
 import { site, links } from "../config/site";
+import { featuredProducts } from "../data/products";
 import {
   services,
   whyChooseUs,
@@ -174,6 +176,32 @@ export default function Home() {
           <Link to="/departments" className="btn-ghost btn-lg">
             View all departments <Icon name="arrow" className="h-4 w-4" />
           </Link>
+        </div>
+      </section>
+
+      {/* ================= STORE SHOWCASE ================= */}
+      <section className="bg-brand-50/40 py-16 sm:py-20">
+        <div className="container-x">
+          <SectionHeading
+            eyebrow="Medical & dental store"
+            title="Shop dental & hospital supplies"
+            intro="Quality consumables, instruments and equipment supplied by Jeevaas Hospital at discounted prices. Order online and we confirm stock and delivery on WhatsApp."
+          />
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {featuredProducts.slice(0, 4).map((prod, i) => (
+              <Reveal key={prod.slug} delay={(i % 4) * 0.05}>
+                <ProductCard product={prod} />
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link to="/store" className="btn-primary btn-lg">
+              Visit the store <Icon name="arrow" className="h-4 w-4" />
+            </Link>
+            <p className="mt-3 text-xs text-ink-500">
+              Marketed and supplied by {site.name}. We are the supplier, not the manufacturer.
+            </p>
+          </div>
         </div>
       </section>
 

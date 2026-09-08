@@ -18,6 +18,8 @@ const Gallery = lazy(() => import("./pages/Gallery"));
 const Testimonials = lazy(() => import("./pages/Testimonials"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Book = lazy(() => import("./pages/Book"));
+const Store = lazy(() => import("./pages/Store"));
+const ProductDetail = lazy(() => import("./pages/ProductDetail"));
 const Privacy = lazy(() => import("./pages/legal/Privacy"));
 const Terms = lazy(() => import("./pages/legal/Terms"));
 const Accessibility = lazy(() => import("./pages/legal/Accessibility"));
@@ -54,6 +56,11 @@ export default function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/store" element={<Store />} />
+          <Route path="/store/:slug" element={<ProductDetail />} />
+          <Route path="/shop" element={<Navigate to="/store" replace />} />
+          <Route path="/products" element={<Navigate to="/store" replace />} />
+          <Route path="/store/product/:slug" element={<ProductDetail />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/accessibility" element={<Accessibility />} />
